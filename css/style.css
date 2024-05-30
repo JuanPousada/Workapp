@@ -13,11 +13,26 @@ a {
     color: black;
 }
 
-/* MAIN---------------------------------------------------
-*/
+body {
+  padding-top: 55px;
+}
+
+.btn-1 {
+  background-color: #F17524;
+}
+
+/*MAIN*/
+
+main {
+  padding-bottom: 55px;
+}
+
+.carousel-item {
+  height: 95vh;
+}
+
 .mainVideo{
   opacity: 75%;
-  
 }
 
 
@@ -25,7 +40,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 3rem;
+    
 }
 
 .MainCards .card{
@@ -33,30 +48,36 @@ a {
     border-width: 1px;
     border-style: solid;
     border-color: #FFCA8B;
+    
 }
 
 .MainCards .card-img-overlay{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    margin-bottom: 1.2rem;
-    
+    justify-content: end;    
 }
 
-.MainCards button{
-    width: 60%;
-    height: 17%;
-    background-color: #F17524;
-    color: black;
-    font-weight: 500;
+.MainCards .btn{
+  width: 60%;
+  height: 17%;
+  background-color: #F17524;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
+
+
 
 .mainSubtitulos h4, h6{
   text-align: center;
 }
 
 .mainSubtitulos{
-  margin-bottom: 8rem;
+  margin: 2rem;
 }
 
 .mainSegundaSeccion{
@@ -99,8 +120,6 @@ flex-wrap: wrap;
   border-style: solid;
   border-color: #F17524;
 }
-
-
 
 /* /MAIN--------------------------------------------
 */
@@ -299,7 +318,85 @@ img {
     width: 100%;
     padding: 100px;
   }
-   
+
+  /*MAIN
+  */
+  .carousel-item {
+    height: 55vw;
+    position: relative;
+  }
+
+  .carrousel-caption{
+    position: absolute;
+    
+  }
+
+  .mainVideo video{
+    min-width: 100vw;
+  }
+
+  .MainCards{
+    flex-wrap: wrap;
+  }
+
+  .MainCards .card{
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    
+  }
+
+  
+
+  .mainSubtitulos {
+    margin-bottom: 3rem;
+}
+
+  .mainSegundaSeccion{
+    flex-wrap: wrap;
+  }
+
+  .mainWorkappLogo{
+    margin-bottom: 3rem;
+    max-width: 75%;
+  }
+
+  .mainConjuntoImagenes img{
+    margin-bottom: 1rem;
+  }
+
+  .mainContainer a{
+    font-size: 0.4rem;
+  }
+
+  .mainContainer h6{
+    font-size: 0.5rem;
+  }
+  
+  
+  /* /Main
+  */
+}
+
+@media screen and (max-width: 650px) {
+  .card-title{
+    margin-top: 1rem;
+  }
+  
+  .MainCards h5{
+    font-size: 1.2rem;
+  }
+
+  .card-text{
+    font-size: 0.5rem;
+  }
+
+  .MainCards .btn{
+    height: 40%;  
+    width: 70%;
+  }
+
+  
+  
 }
 
 @media (hover: hover){
@@ -323,8 +420,5 @@ img {
     background-color: #F17524;
     opacity: 100%;
   }
-  
-  }
-
-
 /* AREA CLIENTE */
+
