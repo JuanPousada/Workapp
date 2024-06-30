@@ -301,6 +301,39 @@ img {
   justify-content: space-around;
 }
 
+/*Mi Cuenta*/
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.linea-divisoria {
+  border-top: 2px solid #f17524;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f17524; /* Borde gris con grosor de 2px */
+  cursor: pointer; /* Cambia el cursor a pointer para indicar que es clickeable */
+}
+#foto_perfil {
+  display: none; /* Esconde el input de tipo file */
+}
+
+.cuadro-cursos {
+  margin-top: 20px;
+  margin-bottom: 2rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 767px) {
