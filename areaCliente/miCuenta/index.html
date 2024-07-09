@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/Isotipo Negro y Naranja.png" />
+    <title>Workout Web</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER  -->
+
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow-lg"
+      >
+        <div class="container header-logo">
+          <a href="/index.html" class="navbar-brand">
+            <img src="/img/Isotipo Blanco y Naranja.png" alt="Logotipo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">
+                  <span
+                    class="d-block"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    >SALIR</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HEADER -->
+
+    <div class="container mt-5">
+      <h2>Mi Cuenta</h2>
+      <hr class="linea-divisoria" />
+      <form>
+        <div class="row">
+          <!-- Columna 1: Foto de perfil y Género -->
+          <div class="col-md-4 mb-50">
+            <div class="mb-3 text-center">
+              <label for="foto_perfil" class="form-label">
+                <img
+                  src="/img/perfil.jpg"
+                  alt="Foto de perfil"
+                  class="profile-picture"
+                  id="preview_image"
+                />
+                <input
+                  type="file"
+                  class="form-control mt-2"
+                  id="foto_perfil"
+                  name="foto_perfil"
+                  accept="image/*"
+                />
+              </label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Género</label>
+              <div class="custom-radio">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genero"
+                    id="genero_f"
+                    value="F"
+                    required
+                  />
+                  <label class="form-check-label" for="genero_f"
+                    >Femenino</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genero"
+                    id="genero_m"
+                    value="M"
+                    required
+                  />
+                  <label class="form-check-label" for="genero_m"
+                    >Masculino</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genero"
+                    id="genero_o"
+                    value="O"
+                    required
+                  />
+                  <label class="form-check-label" for="genero_o">Otros</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 2: Nombre, Apellido y Fechas de nacimiento -->
+          <div class="col-md-4 mb-50">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apellido"
+                name="apellido"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="fecha_nacimiento" class="form-label"
+                >Fecha de nacimiento</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="fecha_nacimiento"
+                name="fecha_nacimiento"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Columna 3: Email, País, Teléfono -->
+          <div class="col-md-4 mb-50">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="pais" class="form-label">País</label>
+              <select class="form-select" id="pais" name="pais" required>
+                <option value="">Selecciona tu país</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <!-- Agrega más opciones según sea necesario -->
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                name="telefono"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-end mb-4">
+          <div class="col-md-4">
+            <button type="submit" class="botonFormulario">
+              Guardar cambios
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="cuadro-cursos">
+        <h2 class="mb-4">Lista de Cursos</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Fecha de Inscripción</th>
+                <th>Curso</th>
+                <th>Estado</th>
+                <th>Fecha de Conclusión</th>
+                <th>Certificado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10/06/2023</td>
+                <td>Curso de Programación en Bootstrap</td>
+                <td>Completado</td>
+                <td>22/07/2023</td>
+                <td><a href="#">Ver certificado</a></td>
+              </tr>
+              <tr>
+                <td>15/08/2023</td>
+                <td>Curso Avanzado de JavaScript</td>
+                <td>En progreso</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <!-- Puedes agregar más filas según sea necesario -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-section bg-dark position-relative">
+      <div class="container">
+        <div class="footer-content pt-5 position-relative">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo mb-4">
+                  <a href="index.html"
+                    ><img
+                      src="/img/Isologo Blanco y Naranja.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-social-icon">
+                  <span class="text-light d-block fs-4 fw-bold mb-2"
+                    >Seguinos</span
+                  >
+                  <a class="text-light fs-5 me-3" href="#"
+                    ><i
+                      class="fab fa-facebook-f facebook-bg lh-lg text-center rounded-circle"
+                    ></i
+                  ></a>
+                  <a class="text-light fs-5 me-3" href="#"
+                    ><i
+                      class="fab fa-twitter twitter-bg lh-lg text-center rounded-circle"
+                    ></i
+                  ></a>
+                  <a class="text-light fs-5 me-3" href="#"
+                    ><i
+                      class="fab fa-google-plus-g google-bg lh-lg text-center rounded-circle"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3 class="text-light mb-5 position-relative fs-4 fw-bold">
+                    Links Utiles
+                  </h3>
+                </div>
+                <ul class="m-0 p-0">
+                  <li class="d-inline-block mb-2 float-start w-100">
+                    <a href="#">Inicio</a>
+                  </li>
+                  <li class="d-inline-block mb-2 float-start w-100">
+                    <a href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="d-inline-block mb-2 float-start w-100">
+                    <a href="#">Programas</a>
+                  </li>
+                  <li class="d-inline-block mb-2 float-start w-100">
+                    <a href="#">Contacto</a>
+                  </li>
+                  <li class="d-inline-block mb-2 float-start w-100">
+                    <a href="#">Ultimas Noticias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3 class="text-light mb-5 position-relative fs-4 fw-bold">
+                    Suscribete
+                  </h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p class="text-secondary">
+                    No dejes de suscribirte a nuestros nuevos feeds, por favor
+                    completa el formulario a continuación.
+                  </p>
+                </div>
+                <div class="subscribe-form position-relative overflow-hidden">
+                  <form action="#">
+                    <input
+                      class="w-100 px-2 py-2 bg-secondary border-light text-dark"
+                      type="text"
+                      placeholder="Correo Electronico"
+                    />
+                    <button class="position-absolute px-4 py-2">
+                      <i class="fab fa-telegram-plane text-light fs-4"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area bg-gradient px-0 py-2">
+        <div class="container">
+          <div class="row">
+            <div class="text-center">
+              <div class="copyright-text">
+                <p class="m-0 fs-6 text-secondary">
+                  Copyright &copy; 2024, All Right Reserved
+                  <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/"
+                    >Codo a Codo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
