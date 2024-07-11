@@ -8,20 +8,19 @@ var homeRouter = require("./routes/home");
 var cursosRouter = require("./routes/cursos");
 var areaClienteRouter = require("./routes/areaCliente");
 var authRouter = require("./routes/auth")
-
+const bodyParser = require("body-parser")
 
 var app = express();
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(bodyParser.json());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
 app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
