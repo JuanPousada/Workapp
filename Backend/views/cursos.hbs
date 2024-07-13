@@ -1,10 +1,15 @@
-<div class="container">
+
+      <br><br><br>
       <div class="section-title text-center">
-        <h1><span>Nuestros Cursos</span></h1>
+        <h1 class="col-12"><span class="col-12">Nuestros Cursos</span></h1>
       </div>
+      <br>
+
+<div class="container containerCursos">
+      
         {{#each data}}
-        <div class="row">
-        <div class="col-lg-4 col-md-6 border border-warning rounded p-2">
+        <div class="row col-5 cardCurso">
+        <div class="col-12 border border-warning rounded p-2">
           <div class="single-item">
             <div class="img-holder">
               <img src="{{{imagen}}}" style="width: 200px"/>
@@ -30,12 +35,15 @@
                 class="botonFormulario"
                 href="/areaCliente/miCuenta/index.html"
                 title="Inscribirse a PERSONAL TRAINER Y MUSCULACIÓN"
-                ><span>Inscribirse</i></span
-              ></a>
+                ><span class="inscribirse">Inscribirse</i></span>
+                
+                </a>
+                <br>
             </div>
           </div>
         </div>
       </div>
+      
       {{/each}}
 </div>
 

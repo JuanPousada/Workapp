@@ -40,7 +40,7 @@ exports.register =(req, res) =>{
         });
         }
         let hashedContrasena = await bcrypt.hash(contrasena, 8);
-        console.log(hashedContrasena)
+        
 
         connection.query('INSERT INTO usuarios SET ?', {nombre: nombre,apellido: apellido, email: email, contraseña: hashedContrasena}, (error, results)=>{
             if(error){

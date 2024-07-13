@@ -296,6 +296,35 @@ img {
   justify-content: space-around;
 }
 
+/*Area cliente
+
+/* Listado </*/
+  .containerCursos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+  }  
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    max-height: 50rem;
+    margin-bottom: 5rem;
+}
+
+.containerCursos .button{
+  margin-bottom: 1rem;
+}
+
+.containerCursos a{
+  background-color: #f17524;
+}
+
+/* Listado > */
+
 /*Mi Cuenta*/
 
 .mb-50 {
@@ -446,3 +475,5 @@ img {
   }
   /* AREA CLIENTE */
 }
+
+
