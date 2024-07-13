@@ -115,6 +115,10 @@ h6 {
   border-width: 1px;
   border-style: solid;
   border-color: #f17524;
+} 
+
+.mainContainer .btn{
+  background-color: #f17524;
 }
 
 /* /MAIN--------------------------------------------
@@ -321,6 +325,16 @@ img {
 
 .containerCursos a{
   background-color: #f17524;
+  font-weight: 200;
+}
+
+.list-group a{
+  background-color: #f17524;
+}
+
+.list-group .active{
+  border-style: none;
+  background-color: #ffca8b !important;
 }
 
 /* Listado > */
